@@ -37,7 +37,7 @@ console.log(typeof age);
 //college = "New College";
 
 console.log(college);
-Lab 2 completed
+
 
 
 
