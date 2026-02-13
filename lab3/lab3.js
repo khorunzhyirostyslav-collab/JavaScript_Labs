@@ -24,7 +24,7 @@ console.log("typeof myUndefined =", typeof myUndefined);
 console.log("typeof myNull =", typeof myNull);
 console.log("\n===== Завдання 2 =====");
 
-// 🔹 1. Рядок → число
+//  1. Рядок → число
 let strValue = "123.45";
 let numberFromString = Number(strValue);
 
@@ -32,7 +32,7 @@ console.log("Рядок:", strValue, "| тип:", typeof strValue);
 console.log("Після Number():", numberFromString, "| тип:", typeof numberFromString);
 
 
-// 🔹 2. Число → рядок
+//  2. Число → рядок
 let numValue = 500;
 let stringFromNumber = String(numValue);
 
@@ -40,7 +40,7 @@ console.log("Число:", numValue, "| тип:", typeof numValue);
 console.log("Після String():", stringFromNumber, "| тип:", typeof stringFromNumber);
 
 
-// 🔹 3. Значення → boolean
+//  3. Значення → boolean
 let value1 = 1;
 let value2 = 0;
 
@@ -51,7 +51,7 @@ console.log("Boolean(1):", bool1, "| тип:", typeof bool1);
 console.log("Boolean(0):", bool2, "| тип:", typeof bool2);
 console.log("\n===== Завдання 3 =====");
 
-// 🔹 Неявне перетворення в математичних виразах
+//  Неявне перетворення в математичних виразах
 
 let result1 = "5" - 2;   // рядок - число
 let result2 = "5" * 2;   // рядок * число
@@ -62,7 +62,7 @@ console.log('"5" * 2 =', result2, "| тип:", typeof result2);
 console.log('"5" / 2 =', result3, "| тип:", typeof result3);
 
 
-// 🔹 Неявне перетворення при конкатенації
+//  Неявне перетворення при конкатенації
 
 let result4 = "5" + 2;   // тут буде рядок
 let result5 = 10 + "20"; // теж рядок
