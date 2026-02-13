@@ -71,3 +71,32 @@ console.log('"5" + 2 =', result4, "| тип:", typeof result4);
 console.log('10 + "20" =', result5, "| тип:", typeof result5);
 //"5" + 2 → "52"
 //10 + "20" → "1020"
+console.log("\n===== Завдання 4 =====");
+
+// Функція, яка повертає тип значення
+function getType(value) {
+    return typeof value;
+}
+
+// Перевірка функції
+console.log("Тип 'Hello':", getType("Hello"));
+console.log("Тип 100:", getType(100));
+console.log("Тип true:", getType(true));
+console.log("Тип undefined:", getType(undefined));
+console.log("Тип null:", getType(null));
+console.log("Тип {a:1}:", getType({a:1}));
+console.log("\n===== Завдання 5 =====");
+
+// Порівняння різних типів
+
+console.log('"5" == 5 :', "5" == 5);
+console.log('"5" === 5 :', "5" === 5);
+
+console.log('true == 1 :', true == 1);
+console.log('true === 1 :', true === 1);
+
+console.log('null == undefined :', null == undefined);
+console.log('null === undefined :', null === undefined);
+
+console.log('0 == false :', 0 == false);
+console.log('0 === false :', 0 === false);
