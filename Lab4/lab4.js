@@ -18,3 +18,47 @@ let result = (number % 2 === 0)
     : "Число непарне ❌";
 
 console.log(result);
+// Завдання 3
+
+let day = "Понед";
+
+switch(day) {
+    case "Понеділок":
+        console.log("Сьогодні початок робочого тижня 📚");
+        break;
+
+    case "Вівторок":
+        console.log("Продовжуємо працювати 💻");
+        break;
+
+    case "Середа":
+        console.log("Середина тижня ⚖️");
+        break;
+
+    case "Четвер":
+        console.log("Тиждень майже завершився 🚀");
+        break;
+
+    case "П’ятниця":
+        console.log("Останній робочий день 🎉");
+        break;
+
+    case "Субота":
+    case "Неділя":
+        console.log("Вихідний день 😎");
+        break;
+
+    default:
+        console.log("Невірно введений день ❌");
+}
+// Завдання 4
+
+let password = prompt("Введіть пароль:");
+
+if (password === "admin123") {
+    console.log("Доступ дозволено ✅");
+} else {
+    console.log("Доступ заборонено ❌");
+}
+
+
