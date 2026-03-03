@@ -82,3 +82,14 @@ const greaterThanTen = numbersArray.filter(function(num) {
 
 console.log("Початковий масив:", numbersArray);
 console.log("Числа більше 10:", greaterThanTen);
+// ----------------------------------------
+// Таблиця множення для числа 9
+// ----------------------------------------
+
+console.log("\n--- Додаткове завдання: Таблиця множення для 9 ---");
+
+const tableNumber = 9;
+
+for (let i = 1; i <= 10; i++) {
+    console.log(tableNumber + " x " + i + " = " + (tableNumber * i));
+}
