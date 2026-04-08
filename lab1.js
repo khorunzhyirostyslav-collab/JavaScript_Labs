@@ -1,12 +1,23 @@
-// Завдання 1
+// Лабораторна робота №20
+// Варіант 18
+// Завдання: створити об'єкт із вкладеним методом та перевірити this
 
-let temperature = 18;
+const student = {
+    name: "Ростислав",
+    group: "3-038",
 
-if (temperature < 10) {
-    console.log("Погода холодна ❄️");
-} else if (temperature >= 10 && temperature <= 25) {
-    console.log("Погода тепла 🌤");
-} else {
-    console.log("Погода спекотна 🔥");
-}
+    showInfo: function () {
+        console.log("Ім'я студента:", this.name);
+        console.log("Група:", this.group);
 
+        const nestedMethod = () => {
+            console.log("Перевірка this у вкладеному методі:");
+            console.log("Ім'я через this:", this.name);
+            console.log("Група через this:", this.group);
+        };
+
+        nestedMethod();
+    }
+};
+
+student.showInfo();
