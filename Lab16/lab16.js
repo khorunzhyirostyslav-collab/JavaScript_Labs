@@ -11,3 +11,14 @@ numbers.forEach(function(num) {
         console.log(num);
     }
 });
+// --- ДОДАТКОВЕ ЗАВДАННЯ ---
+
+console.log("Перетворення чисел у рядки:");
+
+const stringNumbers = [];
+
+numbers.forEach(function(num) {
+    stringNumbers.push(String(num));
+});
+
+console.log(stringNumbers);
