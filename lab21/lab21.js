@@ -1,7 +1,7 @@
 // Лабораторна робота №21
 // Тема: Прототипи та класи
 // Варіант 18
-// Завдання: додати у "Бібліотека" метод додатиКнигу() для додавання книги до масиву
+// Завдання: додати у "Бібліотека" метод addBook() для додавання книги до масиву
 
 class Book {
     constructor(title, author, year) {
@@ -23,11 +23,17 @@ class Library {
 
     addBook(book) {
         this.books.push(book);
+        console.log(`Книга "${book.title}" додана до бібліотеки`);
     }
 
     showBooks() {
-        console.log(`Бібліотека: ${this.name}`);
+        console.log(`\nБібліотека: ${this.name}`);
         console.log("Список книг:");
+
+        if (this.books.length === 0) {
+            console.log("Бібліотека порожня");
+            return;
+        }
 
         this.books.forEach((book, index) => {
             console.log(`${index + 1}. ${book.showInfo()}`);
