@@ -23,7 +23,7 @@ class Library {
 
     addBook(book) {
         this.books.push(book);
-        console.log(`Книга "${book.title}" додана до бібліотеки`);
+       console.log(`Книга "${book.title}" додана до бібліотеки`);
     }
 
     showBooks() {
