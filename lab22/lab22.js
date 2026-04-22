@@ -1,9 +1,6 @@
-const title = document.getElementById("title");
+const colorSelect = document.getElementById("colorSelect");
+const colorBox = document.getElementById("colorBox");
 
-title.addEventListener("mouseover", function () {
-    title.style.color = "red";
-});
-
-title.addEventListener("mouseout", function () {
-    title.style.color = "black";
+colorSelect.addEventListener("change", function () {
+    colorBox.style.backgroundColor = colorSelect.value;
 });
