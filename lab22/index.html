@@ -1,48 +1,18 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Лабораторна робота №23</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin-top: 50px;
-        }
-
-        #colorBox {
-            width: 300px;
-            height: 150px;
-            margin: 20px auto;
-            border: 2px solid black;
-            line-height: 150px;
-            font-size: 20px;
-            font-weight: bold;
-            background-color: lightgray;
-        }
-
-        select {
-            padding: 8px;
-            font-size: 16px;
-        }
-    </style>
+<meta charset="UTF-8">
+<title>Лабораторна робота №22</title>
 </head>
 <body>
-    <h1>Вибір кольору фону</h1>
 
-    <label for="colorSelect">Оберіть колір:</label>
-    <select id="colorSelect">
-        <option value="lightgray">Світло-сірий</option>
-        <option value="red">Червоний</option>
-        <option value="green">Зелений</option>
-        <option value="blue">Синій</option>
-        <option value="yellow">Жовтий</option>
-        <option value="pink">Рожевий</option>
-    </select>
+<h1 id="title">Лабораторна робота №22</h1>
+<p>Наведіть курсор миші на заголовок, щоб змінити його колір.</p>
 
-    <div id="colorBox">Тут змінюється фон</div>
+<input type="text" id="textInput" placeholder="Введіть текст">
+<p>Кількість символів: <span id="count">0</span></p>
 
-    <script src="script.js"></script>
+<script src="./lab22.js"></script>
+
 </body>
 </html>
