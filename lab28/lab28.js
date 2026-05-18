@@ -34,3 +34,25 @@ function clearWishlist() {
 }
 
 showWishlist();
+// Додаткове завдання:
+// збереження інформації про останній візит
+
+const lastVisitBlock = document.getElementById("lastVisit");
+
+const lastVisit = localStorage.getItem("lastVisit");
+
+if (lastVisit) {
+
+    lastVisitBlock.textContent =
+        "Ваш останній візит: " + lastVisit;
+
+} else {
+
+    lastVisitBlock.textContent =
+        "Це ваш перший візит.";
+
+}
+
+const currentDate = new Date().toLocaleString();
+
+localStorage.setItem("lastVisit", currentDate);
