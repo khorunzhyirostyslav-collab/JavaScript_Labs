@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Лабораторна робота №28</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        .item {
+            margin: 10px 0;
+        }
+
+        button {
+            margin-left: 10px;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+
+        #wishlist {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid gray;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Лабораторна робота №28</h1>
+    <h2>Wish-list з використанням LocalStorage</h2>
+
+    <div class="item">
+        Ноутбук
+        <button onclick="addToWishlist('Ноутбук')">Додати в обране</button>
+    </div>
+
+    <div class="item">
+        Смартфон
+        <button onclick="addToWishlist('Смартфон')">Додати в обране</button>
+    </div>
+
+    <div class="item">
+        Навушники
+        <button onclick="addToWishlist('Навушники')">Додати в обране</button>
+    </div>
+
+    <h3>Список обраного:</h3>
+    <div id="wishlist"></div>
+
+    <button onclick="clearWishlist()">Очистити список</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
