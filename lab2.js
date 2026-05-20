@@ -1,43 +1,37 @@
-// Оголошення змінних різними способами
+// Лабораторна робота №30
+// Варіант 18
+// Перевірка вихідного дня та виведення дати і часу
 
-var studentName = "Rostyslav";
-let age = 16;
-const college = "Aviation College";
+const checkBtn = document.getElementById("checkBtn");
+const result = document.getElementById("result");
 
-console.log(studentName);
-console.log(age);
-console.log(college);
-// Завдання 2. Визначення типів змінних
+checkBtn.addEventListener("click", function () {
 
-console.log(typeof studentName);
-console.log(typeof age);
-console.log(typeof college);
-// Завдання 3. Створення об'єкта
+    // Створюємо об'єкт Date з поточною датою та часом
+    const now = new Date();
 
-let student = {
-    name: "Rostyslav",
-    age: 16,
-    isStudent: true
-};
+    // Отримуємо день місяця
+    const dayNumber = now.getDay();
 
-console.log(student);
-// Завдання 4. Додавання нового поля
+    // Форматування дати
+    const day = String(now.getDate()).padStart(2, "0");
+    const month = String(now.getMonth() + 1).padStart(2, "0");
+    const year = now.getFullYear();
 
-student.university = "Aviation College";
+    // Форматування часу
+    const hours = String(now.getHours()).padStart(2, "0");
+    const minutes = String(now.getMinutes()).padStart(2, "0");
 
-console.log(student);
-// Завдання 5. Зміна типу змінної
+    // Формуємо рядок дати і часу
+    const currentDateTime =
+        `${day}.${month}.${year} ${hours}:${minutes}`;
 
-age = "16 років";
-
-console.log(age);
-console.log(typeof age);
-// Завдання 6. Спроба змінити const
-
-//college = "New College";
-
-console.log(college);
-
-
-
-
+    // Перевірка вихідного дня
+    if (dayNumber === 0 || dayNumber === 6) {
+        result.textContent =
+            `${currentDateTime} — сьогодні вихідний день.`;
+    } else {
+        result.textContent =
+            `${currentDateTime} — сьогодні робочий день.`;
+    }
+});
