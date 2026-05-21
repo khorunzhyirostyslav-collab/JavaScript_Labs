@@ -77,3 +77,19 @@ function clearTasks() {
 }
 
 showTasks();
+
+// Додаткове завдання:
+// лічильник відвідувань сторінки
+
+let visits = localStorage.getItem("visits");
+
+if (visits === null) {
+    visits = 1;
+} else {
+    visits = Number(visits) + 1;
+}
+
+localStorage.setItem("visits", visits);
+
+document.getElementById("visitCounter").textContent =
+    "Кількість відвідувань сторінки: " + visits;
