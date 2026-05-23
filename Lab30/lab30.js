@@ -13,6 +13,18 @@ checkBtn.addEventListener("click", function () {
     // Отримуємо день місяця
     const dayNumber = now.getDay();
 
+    const days = [
+    "Неділя",
+    "Понеділок",
+    "Вівторок",
+    "Середа",
+    "Четвер",
+    "П'ятниця",
+    "Субота"
+];
+
+const dayName = days[dayNumber];
+
     // Форматування дати
     const day = String(now.getDate()).padStart(2, "0");
     const month = String(now.getMonth() + 1).padStart(2, "0");
@@ -29,9 +41,9 @@ checkBtn.addEventListener("click", function () {
     // Перевірка вихідного дня
     if (dayNumber === 0 || dayNumber === 6) {
         result.textContent =
-            `${currentDateTime} — сьогодні вихідний день.`;
+            `${currentDateTime} — ${dayName}. Сьогодні вихідний день.`
     } else {
         result.textContent =
-            `${currentDateTime} — сьогодні робочий день.`;
+            `${currentDateTime} — ${dayName}. Сьогодні робочий день.`
     }
 });
